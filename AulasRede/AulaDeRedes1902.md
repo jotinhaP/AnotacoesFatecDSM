@@ -35,3 +35,8 @@ Em execução
 pronto (para ser processado)
 bloqueado
 
+## threads
+
+São processos ou caminhos que o programa segue, auxiliando no processo dos programas, eles ficam ali executando suas funções como contar o que já foi executado.
+
+Mano estuda em casa essa porra dá pra entender nada da aula desse maluco
