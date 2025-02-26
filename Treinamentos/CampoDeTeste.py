@@ -1,7 +1,7 @@
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
-num4 = int(input())
-diferenca = num1 * num2 - num3 * num4
-print('DIFERENCA =',diferenca)
-
+valores = input().split(' ')
+valor_A = int(valores[0])
+valor_B = int(valores[1])
+valor_C = int(valores[2])
+maior_AB = (valor_A + valor_B + abs(valor_A - valor_B)) / 2
+maior_ABC = (maior_AB + valor_C + abs(maior_AB - valor_C)) / 2
+print(f'{maior_ABC:.0f} eh o maior')
