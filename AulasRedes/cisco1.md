@@ -150,3 +150,110 @@ Uma organização pode usar uma extranet para fornecer acesso seguro e protegido
 Uma empresa que fornece acesso a fornecedores e contratados externos;
 Um hospital que fornece um sistema de reservas aos médicos para que eles possam marcar consultas para seus pacientes;
 Um escritório local de educação que está fornecendo informações sobre orçamento e pessoal às escolas de seu distrito.
+
+### Formas de Acesso a Internet
+
+Usuários domésticos, trabalhadores remotos e pequenos escritórios geralmente exigem uma conexão com um ISP para acessar a Internet.
+
+**Opções Populares desse tipo de conexão para usuários domésticos e pequenos negócios:** incluem banda larga a cabo, a banda larga via digital subscriber line (DSL), WANs sem fio e serviços de telefonia móvel celular.
+
+As organizações geralmente precisam acessar outros sites corporativos e a Internet. Conexões rápidas são necessárias para dar suporte a serviços comerciais que incluem telefones IP, videoconferência e armazenamento em data center. As controladoras oferecem interconexões de nível empresarial.
+
+**Opções populares de conexão para grandes negócios e etc:** incluem DSL, linhas dedicadas e Metro Ethernet.
+
+### Conexões de internet para casas e pequenos escritórios
+
+
+**Cabo** - Normalmente oferecido por provedores de serviços _de televisão a cabo_, _o sinal de dados da Internet transmite no mesmo cabo que fornece televisão a cabo_. Ele fornece _alta largura de banda_, _alta disponibilidade_ e uma _conexão sempre ativa à Internet_.
+
+**DSL** - As linhas de assinante digital também fornecem _alta largura de banda_, _alta disponibilidade_ e uma _conexão sempre ativa à Internet_. O DSL _funciona utilizando a linha telefônica_. Em geral, usuários de pequenos escritórios e escritórios domésticos se conectam com o uso de _DSL Assimétrico (ADSL)_, o que significa que _a velocidade de download é maior que a de upload_.
+
+**Celular(básicamente os dados moveis)** - O acesso celular à Internet usa uma _rede de telefonia celular para se conectar_. Onde quer que você possa obter um sinal de celular, você pode obter acesso à Internet por celular. O desempenho é **limitado** pelos _recursos do telefone e da torre de celular à qual está conectado_.
+
+**Satélite** - A disponibilidade do acesso à Internet via satélite é um _benefício_ nas áreas que, de outra forma, _não teriam_ conectividade com a Internet. As _antenas parabólicas exigem uma linha de visão clara_ para o satélite.
+
+**Conexão Discada (Dial-up)** - Uma opção de **baixo custo** que usa _qualquer linha telefônica e um modem_. A _baixa largura de banda_ fornecida por uma conexão de modem dial-up _não é suficiente_ para grandes transferências de dados, embora seja útil para acesso móvel durante a viagem.
+
+A escolha da conexão varia dependendo da localização geográfica e da disponibilidade do provedor de serviço
+
+### Conexões corporativas para a internet
+
+As empresas podem exigir _largura de banda maior_, _largura de banda dedicada e serviços gerenciados_. As opções de conexão disponíveis diferem dependendo do **tipo de provedor de serviços** localizado nas proximidades.
+
+**Linha Alugada Dedicada** - As **linhas alugadas** são _circuitos reservados na rede do provedor de serviços_ que _conectam escritórios_ geograficamente separados para _redes privadas de voz e / ou dados_. Os circuitos são alugados a uma taxa mensal ou anual.
+
+**Metro Ethernet** - Isso às vezes é conhecido como Ethernet WAN. Neste módulo, vamos nos referir a ele como Metro Ethernet. As ethernet metropolitanas estendem a tecnologia de acesso à LAN na WAN. Ethernet é uma tecnologia de LAN que você aprenderá em um módulo posterior.
+
+**DSL de negócios** - O DSL comercial está disponível em vários formatos. Uma escolha popular é a linha de assinante digital simétrica (SDSL), que é semelhante à versão DSL do consumidor, mas fornece uploads e downloads nas mesmas velocidades altas.
+
+**Satélite** - O serviço de satélite pode fornecer uma conexão quando uma solução com fio não está disponível.
+
+## A rede Convergente
+
+### Redes separadas tradicionais
+
+Considere uma escola construída há trinta anos. Naquela época, algumas salas de aula eram cabeadas para a rede de dados, a rede telefônica e a rede de vídeo para televisões. Essas redes separadas não puderam se comunicar. Cada rede usava tecnologias diferentes para transmitir o sinal de comunicação. Cada rede possuía seu próprio conjunto de regras e padrões para assegurar a comunicação bem-sucedida. Vários serviços foram executados em várias redes.
+
+### Redes convergentes 
+
+Diferentemente das redes dedicadas, as redes convergentes são capazes de fornecer dados, voz e vídeo entre muitos tipos diferentes de dispositivos na mesma infraestrutura de rede. Essa infraestrutura de rede usa o mesmo conjunto de regras, os mesmos contratos e normas de implementação. As redes de dados convergentes transportam vários serviços em uma rede.
+
+## Arquitetura de redes
+
+confiabilidade significa mais do que sua conexão à Internet.
+
+Para que as redes funcionem com eficiência e cresçam nesse tipo de ambiente, a rede deve ser construída sobre uma arquitetura de rede padrão.
+
+Elas devem operar sobre muitos tipos diferentes de cabos e dispositivos, que compõem a infraestrutura física.
+
+O termo arquitetura de redes, neste contexto, refere-se às tecnologias que apoiam a infraestrutura e os serviços programados e as regras, ou protocolos, que movimentam os dados na rede.
+
+há quatro características básicas que os arquitetos de rede devem atender para atender às expectativas do usuário:
+
+* Tolerância a falhas;
+* Escalabilidade;
+* Qualidade de serviço (QoS);
+* Segurança.
+
+### Tolerancia a falhas
+
+Uma rede tolerante a falhas é aquela que limita o número de dispositivos afetados durante uma falha. Ela foi desenvolvido para permitir uma recuperação rápida quando ocorre uma falha. 
+As redes dependem de diversos caminhos para funcionar.
+Se um caminho falhar, as mensagens serão instantaneamente enviadas por um link diferente. Ter vários caminhos para um destino é conhecido como redundância.
+
+A implementação de uma rede comutada por pacotes é uma das maneiras pelas quais redes confiáveis fornecem redundância.
+comutação de pacotes divide os dados do tráfego em pacotes que são roteados por uma rede compartilhada.
+Cada pacote tem as informações de endereço necessárias da origem e do destino da mensagem. Os roteadores na rede alternam os pacotes com base na condição da rede no momento. Isso significa que todos os pacotes em uma única mensagem podem seguir caminhos muito diferentes para o mesmo destino.
+
+### Escalabilidade
+
+Uma rede escalável se _expande rapidamente_ para **oferecer suporte a novos usuários e aplicativos**.
+Ele faz isso _sem degradar o desempenho_ dos serviços que estão sendo acessados por usuários existentes.
+Essas redes _são escaláveis porque_ os projetistas **seguem padrões e protocolos aceitos**. Isso permite que os fornecedores de software e hardware se concentrem em melhorar produtos e serviços sem precisar criar um novo conjunto de regras para operar na rede.
+Usuários adicionais e redes inteiras podem ser conectados à Internet sem reduzir o desempenho para usuários atuais.
+
+### Qualidade dos serviços
+
+A qualidade do serviço _(QoS) é um requisito crescente das redes atualmente_.
+o QoS se torna um mecanismo essencial para _gerenciar os congestionamentos_ e **garantir a entrega confiável do conteúdo para todos os usuários**.
+O _congestionamento acontece_ quando a **demanda por largura de banda excede a quantidade disponível**.
+A largura de banda **é medida pelo número de bits** que podem ser transmitidos em um único segundo, ou _bits por segundo (bps)_.
+Ao tentar uma _comunicação simultânea pela rede_, a _demanda pela largura de banda_ pode exceder sua disponibilidade, criando um congestionamento na rede.
+
+Quando o _volume de tráfego é maior do que o que pode ser transportado pela rede_, os dispositivos **retêm os pacotes na memória até que os recursos estejam disponíveis** para transmiti-los.
+
+A qualidade de serviço, _controlada pelo roteador_, garante que as prioridades sejam _correspondentes ao tipo de comunicação_ e à sua importância para a empresa.
+
+### Segurança da Rede
+
+Os administradores de rede devem abordar _dois tipos de preocupações de segurança_ de rede: _segurança da infraestrutura de rede_ e **segurança da informação**.
+
+Proteger a infraestrutura de rede inclui _proteger fisicamente os dispositivos que fornecem conectividade de rede_ e _impedir o acesso não autorizado ao software de gerenciamento que reside neles_.
+
+Os administradores podem proteger a rede com segurança de software e hardware e impedindo o acesso físico aos dispositivos de rede.
+
+Os administradores de rede também devem proteger as informações contidas nos pacotes transmitidos pela rede e as informações armazenadas nos dispositivos conectados à rede. Para atingir os objetivos de segurança de rede, **existem três requisitos principais**:
+
+**Confidencialidade** - Confidencialidade dos dados significa que apenas os destinatários pretendidos e autorizados podem acessar e ler dados.
+**Integridade** - A integridade dos dados garante aos usuários que as informações não foram alteradas na transmissão, da origem ao destino.
+**Disponibilidade** - A disponibilidade de dados garante aos usuários acesso oportuno e confiável aos serviços de dados para usuários autorizados.
