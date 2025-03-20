@@ -86,3 +86,25 @@ E claro tudo isso trabalhando de acordo com as restrições organizacionais e fi
 
 A engenharia de software não se preocupa apenas com os processos técnicos do desenvolvimento de software. Ela também inclui atividades como gerenciamento de projeto de software e desenvolvimento de ferramentas, métodos e teorias para apoiar a produção de software.
 
+## Pontos importantes
+
+* Engenharia de software é uma disciplina de engenharia que se preocupa com todos os aspectos da produção
+de software.
+* Software não é apenas um programa ou programas; ele inclui também a documentação. Os atributos princi-
+pais de um produto de software são manutenibilidade, confiança, proteção, eficiência e aceitabilidade.
+* O processo de software inclui todas as atividades envolvidas no desenvolvimento do software. Atividades
+de alto nível de especificação, desenvolvimento, validação e evolução são parte de todos os processos de
+software.
+* As ideias fundamentais da engenharia de software são universalmente aplicáveis para todos os tipos de desen-
+volvimento de sistemas. Esses fundamentos incluem processos de software, confiança, proteção, requisitos e
+reúso.
+* Existem vários tipos diferentes de sistemas, e cada um requer ferramentas e técnicas de engenharia de software
+adequadas a seu desenvolvimento. Existem poucas, se houver alguma, técnicas específicas de projeto e imple-
+mentação aplicáveis para todos os tipos de sistemas.
+* As ideias básicas da engenharia de software são aplicáveis a todos os tipos de sistemas de software. Esses
+fundamentos incluem processos de software gerenciados, confiança e proteção de software, engenharia de
+requisitos e reúso de software.
+* Engenheiros de software têm responsabilidades com a profissão de engenharia e com a sociedade. Eles não
+devem se preocupar apenas com as questões técnicas.
+* Sociedades profissionais publicam códigos de conduta que definem os padrões de comportamento esperado
+de seus membro
