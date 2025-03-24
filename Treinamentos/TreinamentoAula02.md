@@ -1,4 +1,4 @@
-# Anotações sobre o Segundo treinamento interfatecs e tal
+# Anotações das aulas 01, 02 dos treinamentos interfatecs
 
 Caso por alguma razão a gente precise deixa o final de uma linha no python diferente da quebra de linha padrão, nós usamos o _end_, assim no final da linha ela não vai quebrar e vai imprimir o que a gente mandar.
 **EX:** print('morri', end='X-X')
@@ -17,3 +17,21 @@ E o parametro "_maxsplit_", que é o numero máximo de partes que essa string po
 EX: frase = Olá, tudo bem?
     frase.split(",", maxsplit=2)
 **OBS: ambos esses parametros são opcionais, no caso do sep, caso ele não seja definido os espaços em branco serão os delimitadores**
+
+### Rotinas / sub-rotinas na programação
+
+Dentro dessa "Categoria de funções" temos as seguintes classificações:
+ * procedimentos = sub-rotinas que não devolvem uma resposta
+ * Funções
+ * Metodos = Funções ou procedimentos que estão dentro de classes.
+
+### Atribuição paralela / unpack
+
+Caso nós desejemos separar uma string/lista com muitos valores para _váriaveis separadas_, nós _fazemos o seguinte_:
+
+_a, b , c (essas são as nossas váriaveis) = 100, 200, 300 (esses são nossos valores)
+
+Seguindo a lógica obvia, os valores serão atribuidos da esquerda para a direita nas váriaveis seguindo esse mesmo padrão. Claro que podemos colocar outros tipos de valores para essas váriaveis, como valores de listas, strings e etc.
+
+**OBS: Quando a gente importa funções, nós podemos dar apelidos a elas, usando o _as_**
+Funciona Assim: from math import sqrt _as_ raiz
