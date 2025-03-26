@@ -75,7 +75,72 @@ EXs: o prompt padrão de configuração de linha é _Switch(config-line)#_ e par
 
 ### Como acessar esses metodos na CLI Do Cisco IOs
 
-Para sairmos do modo EXEC usuário para privilegiado usamos o comando **enable**
-E para irmos do EXEC privilegiado pro global usamos **Configure Terminal**
-Para entrarmos no modo de configuração de interface usamos **interface vlan 1**
+ * Para sairmos do modo EXEC usuário para privilegiado usamos o comando **enable**
+ * Para irmos do Modo EXEC Privilegiado para o EXEC de usuário usamos **disable**
+ * E para irmos do EXEC privilegiado pro global usamos **Configure Terminal**
+ * Para entrarmos no modo de subConfiguração de interface usamos **interface (nome do componente)**
+ * Para entrar no modo de subConfiguração de linha usamos **line ( tipo e número da linha de gerenciamento)**
+ * Para sair do Modo global e de subConfiguração usamos o comando **exit**
+ * E caso você queira sair das subConfiguração direto para o modo de EXEC privilegiado use **end**
+ * E caso eu queira mover de um modo de subConfiguração para outro apenas selecionando a interface para qual eu quero  * mudar _EX: Switch(config-line)# interface FastEthernet 0/1 ---> Switch(config-if)#_
+
 **OBS: O modo _EXEC privilegiado_ também é chamado de _enable mode_**
+
+**OBS: para treinar esse tipo de configuração por console vale a pena usar _verificadores de sintáxe_**
+
+# A estrutura de Comandos 
+
+## Estrutura básica de Comandos do IOs
+
+A imagem a seguir mostra a estrutra de sintaxe de um comando, sendo ela:
+ * _comando_ 
+ * _palavras-chave_: É um parâmetro específico definido no SO(na figura, protocolos ip) 
+ * _argumentos_: Não são pré-definidos; estes são valores ou váriaveis definidos pelos usuários(na figura, 192.168.10.5)
+
+[Estrutura dos Comandos](imagens/estruturaComandos.png)
+
+## Verificação de Sintaxe
+
+Caso eu queira saber como um comando funciona eu posso pesquisar sua sintaxe, mas um resumo disso seria:
+ * **Textos em Negritos** = comandos ou palavras-chave.
+ * **Itálico** = Argumentos para o qual o usuário fornece valor.
+ * **Colchetes** = Argumentos opcionais
+ * **Chaves** = Elemento necessário
+
+[Verificação de Sintaxe](imagens/verificandoSintaxe.png)
+
+**OBS: O comando description é comumente usado para indnetificar a finalidade de uma interface**
+
+## Recursos de Ajuda do IOS
+
+O IOS tem duas Formas de ajuda, _ajuda sensível ao contexto_ e _verificação da sintaxe do comando_.
+A ajuda contextual ajuda a responder as seguintes perguntas:
+ * Quais comandos estão disponíveis em cada modo de comando?
+ * Quais comandos começam com caracteres específicos ou grupo de caracteres?
+ * Quais argumentos e palavras-chave estão disponíveis para comandos específicos?
+
+Sendo que a ajuda contextual, varia dependendo do modo que estamos na CLI, por exemplo se estivermos no modo EXEC privilegiado, e digitarmos "?" ele ira mostrar todos os comandos disponiveis para esse modo.
+
+Se colocarmos alguns caracteres e depois a "?" a ajuda contextual vai mostrar todos os comandos que começam com esses caracteres.
+E para sabermos **como completar um comando** como por exemplo, **saber seus argumentos** e etc, Basta digitarmos o _comando que queremos executar_, dar _um espaço_ e depois _colocar "?"_, que o CLI te mostrara qual o próximo parâmetro. 
+_EX: interface ?_
+
+Para _acessar a ajuda contextual_, basta apenas **digitar "?" no CLI**.
+
+## Alguns Atalhos e teclas de atalho do CLI do IOS
+
+O CLI do IOS permite que abreviemos comandos e palavras chaves, usando o numero minimo de caracteres que indentificam aquele comando. _EX: configure ---> conf_
+Isso ocorre pois o comando configure é o único programa que começa com config.
+Seguindo a lógica acima palavras chaves também podem ser abreviadas assim.
+
+Quando o teminal IOS imprimir um _texto que ultrapasse o tamanho da tela_ ele exibirá um **--more--** para avançar e ver a parte do texto que está além do more, **basta apertar a barra de espaço**.
+
+### Tabelas com atalhos de teclado
+
+[Atalhos de Teclado](imagens/tabelaAtalhos.png)
+
+**OBS: A estruture de comando IOS não reconhece a tecla _delete_**
+
+A tabela a seguir mostra atalhos para sair de operações:
+
+[Tabela para sair de operações](imagens/tabelaComandos2.png)
