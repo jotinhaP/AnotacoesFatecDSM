@@ -1,4 +1,4 @@
-# Anotações baseadas no modulo 2 do curso da cisco
+# Anotações baseadas no modulo 2 do curso da cisco (2.0 - 2.3)
 
 # Acesso ao Cisco IOs
 
@@ -41,7 +41,7 @@ Embora todos os dispositivos venham com o IOS e um conjunto de recursos padrão,
 
 Switchs por natureza irão encaminhar o tráfego e não precisam necessáriamente ser configurados para operar, de qualquer forma **todos os switches devem ser configurados e protegidos**.
 
-![Metodos de acesso](imagens/metodosDeAcesso)
+![Metodos de acesso](../imagens/metodosDeAcesso.png)
 
 Note: Alguns dispositivos, como roteadores, também podem suportar uma porta auxiliar herdada usada para estabelecer uma sessão CLI remotamente por uma conexão telefônica usando um modem. De modo semelhante a uma conexão de console, a porta AUX é do tipo fora de banda e não requer serviços de rede para ser configurada ou estar disponível.
 
@@ -57,7 +57,7 @@ Dito iss, para medidas de segurança o software Cisco IOS separa o acesso de ger
  
  * **Modo EXEC privilegiado**: Para executar comandos de configuração, um administrador de rede deve acessar o modo EXEC privilegiado. Modos de configuração mais altos, como o modo de configuração global, só podem ser acessados do modo EXEC privilegiado. O modo EXEC privilegiado pode ser identificado pelo prompt que termina com o # símbolo.
 
-[Metodos e prompts](imagens/tabelaModosEPrompts.png)
+[Metodos e prompts](../imagens/tabelaModosEPrompts.png)
 
 ## Modos de Configuração e SubConfiguração
 
@@ -97,7 +97,7 @@ A imagem a seguir mostra a estrutra de sintaxe de um comando, sendo ela:
  * _palavras-chave_: É um parâmetro específico definido no SO(na figura, protocolos ip) 
  * _argumentos_: Não são pré-definidos; estes são valores ou váriaveis definidos pelos usuários(na figura, 192.168.10.5)
 
-[Estrutura dos Comandos](imagens/estruturaComandos.png)
+[Estrutura dos Comandos](../imagens/estruturaComandos.png)
 
 ## Verificação de Sintaxe
 
@@ -107,7 +107,7 @@ Caso eu queira saber como um comando funciona eu posso pesquisar sua sintaxe, ma
  * **Colchetes** = Argumentos opcionais
  * **Chaves** = Elemento necessário
 
-[Verificação de Sintaxe](imagens/verificandoSintaxe.png)
+[Verificação de Sintaxe](../imagens/verificandoSintaxe.png)
 
 **OBS: O comando description é comumente usado para indnetificar a finalidade de uma interface**
 
@@ -137,10 +137,10 @@ Quando o teminal IOS imprimir um _texto que ultrapasse o tamanho da tela_ ele ex
 
 ### Tabelas com atalhos de teclado
 
-[Atalhos de Teclado](imagens/tabelaAtalhos.png)
+[Atalhos de Teclado](../imagens/tabelaAtalhos.png)
 
 **OBS: A estruture de comando IOS não reconhece a tecla _delete_**
 
 A tabela a seguir mostra atalhos para sair de operações:
 
-[Tabela para sair de operações](imagens/tabelaComandos2.png)
+[Tabela para sair de operações](../imagens/tabelaComandos2.png)

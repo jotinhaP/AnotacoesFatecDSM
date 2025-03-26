@@ -109,3 +109,58 @@ Por exemplo, é mais fácil para um agente de ameaça comprometer um dispositivo
 O ideal é que empresas usem mais de uma estrategia para defesa, para que assim a segurança fique mais atenuada, assim garantindo que as informações e dados continuem disponiveis, por isso empresas tem a necessidade de criar diferentes camadas de proteção.
 
 **Sobreposição**:  Um bom exemplo de camadas é uma empresa que armazena seus documentos ultra-secretos em um servidor protegido por senha em um prédio trancado e cercado por uma cerca elétrica.
+
+**Limitação**: Limitar o acesso aos dados e às informações reduz a possibilidade de uma ameaça. Uma empresa deve restringir o acesso para que os usuários tenham apenas o nível de acesso necessário para fazer o seu trabalho. Uma empresa deve ter as ferramentas e as configurações certas, como permissões de arquivo, para limitar o acesso, bem como as medidas processuais certas, que definem etapas específicas para fazer qualquer coisa que possa afetar a segurança.
+
+**Diversidade**: Basicamente as camadas de segurança precisam ser diferentes umas das outras, pois obviamente se um invasor penetrou um tipo de defesa, ter uma defesa igual só facilitaria o trabalho dele. Usar diferentes algoritmos e sistemas é uma ótima forma de fortalecer sua defesa, assim é possivel defender os dados nas mais variadas circunstãncias.
+Para tornar essa diversidade ainda maior, uma empresa pode usar produtos de segurança de empresas distintas, como por exemplo ter um cartão de furo de uma empresa e um leitor digital de outra.
+
+**Ofuscação**: Ofuscar dados, é uma medida importante de segurança, pois quanto menos os satacantes souberem do seu sistema, fica mais difícil a formulação de um ataque, por isso empresas não revelam informações como versões dos SOs que estão em servidores ou o tipo de equipamento usado.
+
+**Simplicidade**: Complexidade não garante segurança, muitas vezes pode ocorrer o contrário, o sistema pode ser tão complexo que realizar manutenções nele fique algo muito difícil e demorado. O ideal é que esse sistema de defesa seja simples para o ponto de vista dos funcionários e complexo para quem está no meio externo.
+
+## Gerenciamento de Operações de segurança cibernética
+
+### Gerenciamento de configurações
+
+Gerenciamento de Configurações diz respeito a toda e qaulaquer alteração(identificação, controle e auditoria da implementação) feitas na linha de base de um sistema.
+Configurar uma linha de base inclui todas as definições de um sistema que fornece base para todos os outros sistemas semelhantes, básicamente é uma espécie de modelo.
+Um exemplo disso seria quando é necessário instalar estações de trabalho windows, nesse caso é necessário que seja instalado os aplicativos e definir as configurações do sistema de acordo com uma configuração pré-documentada.
+
+### Arquivos de Log
+
+Um log registra todos os eventos ocorridos, entradas de log compõem arquivos, e todas essas entradas tem informações relacionadas a um evento.
+Por exemplo, um log de auditoria rastreia as tentativas de autenticação do usuário.
+Monitorar os logs permite saber como um ataque ocorreu e se as defesas funcionaram.
+
+O gerenciamento de dados do log de segurança deve determinar os procedimentos para o seguinte:
+ * Gerando arquivos de log
+ * Transmissão de arquivos de log
+ * Armazenamento de arquivos de log
+ * Análise de dados
+ * Descartando dados de log
+
+### Registros do sistema operacional e registros de segurança do aplicativo
+
+**logs do SO**: O sistema operacional registra eventos de registro que estão vinculados a ações relacionadas ao sistema operacional. Eventos do sistema incluem o seguinte:
+
+ * Solicitações do cliente e respostas do servidor, como autenticações de usuário bem-sucedidas
+
+ * Informações de uso que contêm o número e o tamanho das transações em um determinado período de tempo
+
+ **Segurança de Aplicações**: Empresas usam software de segurança pela rede ou pelo sistema para detectar atividade mal-intencionada.
+ Esse software irá gerar os logs de segurança pra fornecer os dados relacionados a segurança, assim facilitando a empresa a analisar e identificar problemas e fornecer documentação que está tudo nos conformes.
+
+### Analisadores de Protocolo
+
+Packet anlyzers interceptam e resgistram o tráfego de rede.
+Um sniffer pode capturar o tráfego e redes com e sem fio.
+Os packet analyzers básicamente capturam os pacotes, mostram os valores de vários dos campos do pacote e analisa seu conteúdo.
+
+**As Funções de um Packet analyzer:**
+ * Log de tráfego
+ * Análise de problemas de rede
+ * Detecção de uso indevido da rede
+ * Detecção de tentativas de invasão da rede
+ * Isolamento do sistema explorado
+
