@@ -41,8 +41,41 @@ Embora todos os dispositivos venham com o IOS e um conjunto de recursos padrão,
 
 Switchs por natureza irão encaminhar o tráfego e não precisam necessáriamente ser configurados para operar, de qualquer forma **todos os switches devem ser configurados e protegidos**.
 
-![Metodos de acesso](#metodos-de-acesso)
+![Metodos de acesso](imagens/metodosDeAcesso)
 
 Note: Alguns dispositivos, como roteadores, também podem suportar uma porta auxiliar herdada usada para estabelecer uma sessão CLI remotamente por uma conexão telefônica usando um modem. De modo semelhante a uma conexão de console, a porta AUX é do tipo fora de banda e não requer serviços de rede para ser configurada ou estar disponível.
 
+# Navegação IOS
 
+## Modos de Comandos Primários
+
+Esse capitulo cai abordar como configurar/navegar num SO de um sistema de redes com bas ena CLI (command line interface), baseando-se no SO que a cisco tem para seus dispositivos, sendo ele o Cisco IOs
+
+Dito iss, para medidas de segurança o software Cisco IOS separa o acesso de gerenciamento em dois modos de comando:
+
+ * **Modo EXEC de usuário**: Este modo possui recursos limitados, mas é útil para operações básicas. Ele permite apenas um número limitado de comandos de monitoramento básicos, mas não permite a execução de nenhum comando que possa alterar a configuração do dispositivo. O modo EXEC usuário é identificado pelo prompt da CLI que termina com o símbolo >.
+ 
+ * **Modo EXEC privilegiado**: Para executar comandos de configuração, um administrador de rede deve acessar o modo EXEC privilegiado. Modos de configuração mais altos, como o modo de configuração global, só podem ser acessados do modo EXEC privilegiado. O modo EXEC privilegiado pode ser identificado pelo prompt que termina com o # símbolo.
+
+[Metodos e prompts](imagens/tabelaModosEPrompts.png)
+
+## Modos de Configuração e SubConfiguração
+
+O modo **Configuração Global** é o modo que permite _configurar os dispositivos de rede_, e seu funcionamento como um todo.
+**OBS: Para indentificarmos que estamos no modo de configuração global, basta ver se no prompt a linha termina com _(config)#_** Exemplo: Swtich(config)#.
+
+Nós acessamos modos de configuração mais específicos apartir do modo de configuração global, pois nele que inserimos modos de subConfiguração, cada modo de subConfiguração permite que nós configuremos uma parte específica do dispositivo.
+
+Os dois modos comuns de subconfiguração são:
+ * **Modo de configuração de linha**: Usado para configurar o acesso ao console, SSH, Telnet ou AUX.
+ * **Modo de configuração da interface**: Usado para configurar uma porta de switch ou interface de rede do roteador.
+
+Por padrão, todo prompt começa com após após o nome do dispositivo. Após o nome, o restante do prompt indica o modo.
+EXs: o prompt padrão de configuração de linha é _Switch(config-line)#_ e para o modo interface _Switch(config-if)#._
+
+### Como acessar esses metodos na CLI Do Cisco IOs
+
+Para sairmos do modo EXEC usuário para privilegiado usamos o comando **enable**
+E para irmos do EXEC privilegiado pro global usamos **Configure Terminal**
+Para entrarmos no modo de configuração de interface usamos **interface vlan 1**
+**OBS: O modo _EXEC privilegiado_ também é chamado de _enable mode_**

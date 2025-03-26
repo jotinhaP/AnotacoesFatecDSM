@@ -30,7 +30,7 @@ Para segurança, confiabilidade e tolerância a falhas, os provedores de nuvem g
 
 #### Os 4 principais tipos de nuvem
 
-![Tipos De Nuvem](TiposDeNuvem.png)
+![Tipos De Nuvem](imagens/TiposDeNuvem.png)
 
 ## Tendencias tecnologicas em casa
 
